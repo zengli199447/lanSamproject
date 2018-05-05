@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey1"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/green_style" />
+
+    <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="70dp"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_min"
+                android:layout_marginTop="10dp">
+
+                <View
+                    android:id="@+id/point"
+                    android:layout_width="100dp"
+                    android:layout_height="10dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/point" />
+
+                <CheckBox
+                    android:id="@+id/cb_select"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/point"
+                    android:button="@drawable/check_tools" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/according_printer"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/layout_height_min"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/corners_gray_dialog_bg"
+                android:gravity="center"
+                android:text="@string/according_printer" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/corners_white_dialog_bg">
+
+                <TextView
+                    android:id="@+id/unpaired_equipment"
+                    android:layout_width="140dp"
+                    android:layout_height="@dimen/layout_height_min"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/corners_green_bg"
+                    android:gravity="center"
+                    android:text="@string/unpaired_equipment"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_content_size" />
+
+                <ListView
+                    android:layout_margin="10dp"
+                    android:id="@+id/unpaired_equipment_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/unpaired_equipment"
+                    android:background="@color/white"
+                    android:divider="@null"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:listSelector="@color/transparent"
+                    android:overScrollMode="never" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/corners_white_dialog_bg">
+
+                <TextView
+                    android:id="@+id/matched_printer"
+                    android:layout_width="140dp"
+                    android:layout_height="@dimen/layout_height_min"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/corners_green_bg"
+                    android:gravity="center"
+                    android:text="@string/matched_printer"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_content_size" />
+
+                <ListView
+                    android:layout_margin="10dp"
+                    android:id="@+id/matched_printer_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/matched_printer"
+                    android:background="@color/white"
+                    android:divider="@null"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:listSelector="@color/transparent"
+                    android:overScrollMode="never" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/end_the_use_of_printers"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/layout_height_min"
+            android:layout_centerInParent="true"
+            android:background="@drawable/corners_green_bg_all"
+            android:gravity="center"
+            android:text="@string/end_the_use_of_printers" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

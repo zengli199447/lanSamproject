@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey1"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/cache_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/personal_cache"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_cache"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <TextView
+            android:id="@+id/tv_setting_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/magin_life_min"
+            android:layout_toLeftOf="@+id/view_cache"
+            android:text="当前缓存 26.3M"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/grey2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/version_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/personal_version"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_version"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <TextView
+            android:id="@+id/tv_setting_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/magin_life_min"
+            android:layout_toLeftOf="@+id/view_version"
+            android:text="当前版本 1.0.0"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/grey2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/push_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/personal_push"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_push"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <TextView
+            android:id="@+id/tv_setting_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/magin_life_min"
+            android:layout_toLeftOf="@+id/view_push"
+            android:text=" 9时 - 18时 "
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/grey2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/button_cancellation"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/layout_login"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/login_button_bac"
+            android:gravity="center"
+            android:text="@string/cancellation"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

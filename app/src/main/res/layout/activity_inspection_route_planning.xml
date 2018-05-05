@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey1"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_layout_pidding_max"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:gravity="center_vertical"
+            android:text="@string/longitude"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:background="@color/grey2" />
+
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_layout_pidding_max"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:gravity="center_vertical"
+            android:text="@string/latitude"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:background="@color/grey2" />
+
+        <TextView
+            android:id="@+id/mission_statement"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_layout_pidding_max"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:gravity="center_vertical"
+            android:text="@string/mission_statement"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/grey2" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/begin_inspection"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/layout_login"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/login_button_bac"
+            android:gravity="center"
+            android:text="@string/begin_inspection"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

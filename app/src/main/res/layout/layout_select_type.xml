@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_select_type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/sample_weight"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_layout_pidding_max"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey1"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/about_type"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_content_size" />
+
+    <RelativeLayout
+        android:id="@+id/layout_land_use"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_layout_pidding_max">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/land_use"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey2" />
+
+        <TextView
+            android:id="@+id/land_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_crop_types"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_layout_pidding_max">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/crop_types"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_crop_types"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey2" />
+
+        <TextView
+            android:id="@+id/crop_types"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view_crop_types"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_irrigation_water_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_layout_pidding_max">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/irrigation_water_type"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_irrigation_water_type"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey2" />
+
+        <TextView
+            android:id="@+id/irrigation_water_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view_irrigation_water_type"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_topography"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_layout_pidding_max">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/topography"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_topography"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey2" />
+
+        <TextView
+            android:id="@+id/topography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view_topography"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_sampling_equipment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_layout_pidding_max">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/sampling_equipment"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_sampling_equipment"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey2" />
+
+        <TextView
+            android:id="@+id/sampling_equipment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view_sampling_equipment"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_organic_sample"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_layout_pidding_max">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/organic_sample"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_organic_sample"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey2" />
+
+        <TextView
+            android:id="@+id/organic_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view_organic_sample"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_inorganic_sample"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_layout_pidding_max">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/inorganic_sample"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_inorganic_sample"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey2" />
+
+        <TextView
+            android:id="@+id/inorganic_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view_inorganic_sample"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_soil_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_layout_pidding_max">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/soil_type"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_soil_type"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey2" />
+
+        <TextView
+            android:id="@+id/soil_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view_soil_type"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_soil_and_the_class"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_layout_pidding_max">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/soil_and_the_class"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_soil_and_the_class"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey2" />
+
+        <TextView
+            android:id="@+id/soil_and_the_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view_soil_and_the_class"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_soil_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_layout_pidding_max">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/soil_color"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_soil_color"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey2" />
+
+        <TextView
+            android:id="@+id/soil_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view_soil_color"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_soil_texture"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_layout_pidding_max">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/soil_texture"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_soil_texture"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey2" />
+
+        <TextView
+            android:id="@+id/soil_texture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view_soil_texture"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_soil_moisture"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_layout_pidding_max">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/soil_moisture"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_soil_moisture"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey2" />
+
+        <TextView
+            android:id="@+id/soil_moisture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view_soil_moisture"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_weather"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_layout_pidding_max">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/weather"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_weather"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey2" />
+
+        <TextView
+            android:id="@+id/weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view_weather"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+</LinearLayout>

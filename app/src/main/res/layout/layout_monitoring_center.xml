@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_monitoring"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/title_layout"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/receiving_batch_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_layout_pidding_max"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/receiving_batch_unit"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_content_size" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/text_layout_pidding_max"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:text="@string/time"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_content_size" />
+
+    <RelativeLayout
+        android:id="@+id/layout_delivery_unit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/receiving_batch_unit">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/delivery_unit"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_delivery_unit"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <TextView
+            android:id="@+id/delivery_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view_delivery_unit"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_deliveryman"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/layout_delivery_unit">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:text="@string/deliveryman"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:id="@+id/view_deliveryman"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right" />
+
+        <TextView
+            android:id="@+id/deliveryman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/view_deliveryman"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_content_size"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

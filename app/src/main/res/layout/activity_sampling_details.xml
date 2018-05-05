@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginBottom="50dp"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/before_sampling"
+                        android:layout_width="@dimen/sampling_photo"
+                        android:layout_height="@dimen/sampling_photo"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/add_photo" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/before_sampling"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/in_the_sampling"
+                        android:layout_width="@dimen/sampling_photo"
+                        android:layout_height="@dimen/sampling_photo"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/add_photo" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/in_the_sampling"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/after_sampling"
+                        android:layout_width="@dimen/sampling_photo"
+                        android:layout_height="@dimen/sampling_photo"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/add_photo" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/after_sampling"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_marginBottom="10dp"
+                android:background="@color/grey1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/sample_list"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/the_northwest"
+                        android:layout_width="@dimen/sampling_photo"
+                        android:layout_height="@dimen/sampling_photo"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/add_photo" />
+
+                    <TextView
+                        android:id="@+id/text_the_northwest"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/the_northwest"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/true_north"
+                        android:layout_width="@dimen/sampling_photo"
+                        android:layout_height="@dimen/sampling_photo"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/add_photo" />
+
+                    <TextView
+                        android:id="@+id/text_true_north"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/true_north"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/the_northeast"
+                        android:layout_width="@dimen/sampling_photo"
+                        android:layout_height="@dimen/sampling_photo"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/add_photo" />
+
+                    <TextView
+                        android:id="@+id/text_the_northeast"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/the_northeast"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/illicit_affair"
+                        android:layout_width="@dimen/sampling_photo"
+                        android:layout_height="@dimen/sampling_photo"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/add_photo" />
+
+                    <TextView
+                        android:id="@+id/text_illicit_affair"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/illicit_affair"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/east"
+                        android:layout_width="@dimen/sampling_photo"
+                        android:layout_height="@dimen/sampling_photo"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/add_photo" />
+
+                    <TextView
+                        android:id="@+id/text_east"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/east"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/affair_south"
+                        android:layout_width="@dimen/sampling_photo"
+                        android:layout_height="@dimen/sampling_photo"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/add_photo" />
+
+                    <TextView
+                        android:id="@+id/text_affair_south"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/affair_south"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/south"
+                        android:layout_width="@dimen/sampling_photo"
+                        android:layout_height="@dimen/sampling_photo"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/add_photo" />
+
+                    <TextView
+                        android:id="@+id/text_south"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/south"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/the_southeast"
+                        android:layout_width="@dimen/sampling_photo"
+                        android:layout_height="@dimen/sampling_photo"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/add_photo" />
+
+                    <TextView
+                        android:id="@+id/text_the_southeast"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/the_southeast"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_content_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/commit"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/login_button_bac"
+            android:gravity="center"
+            android:text="@string/commit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/grey" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

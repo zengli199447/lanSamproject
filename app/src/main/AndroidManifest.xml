@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.landapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:name=".global.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.main.MainActivity"
+            android:theme="@style/MainTheme">
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.main.WelComeActivity"
+            android:theme="@style/MainTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.main.LoginActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.main.HomeActivity"
+            android:theme="@style/MainTheme">
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.main.SettingActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.main.PersonalActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity android:name=".ui.activity.tools.CameraActivity" />
+
+        <activity android:name=".ui.activity.tools.OnePiexlActivity" />
+
+        <activity
+            android:name=".ui.activity.tools.LocationScopeDetectionActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.tools.LocationNavigationActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.office.CurrentTaskActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.office.TaskContentActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.office.ChargeTaskActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.office.ChargeTaskContentActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.tools.QrCodeActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.office.DetailsSampleActivity"
+            android:theme="@style/MainTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name=".ui.activity.office.ChangeRequestActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.office.SceneSamplingActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.office.MonitoringCenterActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.office.MonitoringCenterListActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.office.ChargeTaskConfirmActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.office.SamplingDetailsActivity"
+            android:theme="@style/MainTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name=".ui.activity.tools.LocatorSettingActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.tools.BluetoothPairingActivity"
+            android:theme="@style/MainTheme" />
+
+        <activity
+            android:name=".ui.activity.tools.InspectionRoutePlanningActivity"
+            android:theme="@style/MainTheme" />
+
+
+        <activity android:name="com.example.administrator.landapplication.ui.activity.tools.location.BNDemoMainActivity" />
+
+        <activity android:name="com.example.administrator.landapplication.ui.activity.tools.location.NavigationActivity" />
+
+
+        <receiver
+            android:name=".receiver.CameraReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.broadcast.camera" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".server.InitializeService" />
+        <service android:name=".server.ListenNetworkStateService" />
+        <service android:name=".server.SingBaiDuService" />
+        <service android:name=".server.VersionUpService" />
+        <service android:name=".server.LoopRequestService" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="tBUAZ00HKkyXSwF1P3FRZpmMCq0YVxUo" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+    </application>
+
+</manifest>

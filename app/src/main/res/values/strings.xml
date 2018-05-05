@@ -1,0 +1,327 @@
+<resources>
+    <string name="app_name">土地资源管理</string>
+
+
+    <string name="sys">环境土壤检测系统</string>
+    <string name="welcome">辽宁省大连市环保局</string>
+    <string name="copyright">版权所有 © 2013 武汉东之友道信息技术有限公司</string>
+
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="login">登陆</string>
+    <string name="registered">注册</string>
+    <string name="forgot_password">忘记密码</string>
+    <string name="bbs">论坛</string>
+    <string name="hint_user">用户名/手机号/邮箱</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="progress">载入中 ...</string>
+    <string name="login_progress">登陆中 ...</string>
+    <string name="cancellation_progress">注销中 ...</string>
+
+    <string name="message">消息</string>
+    <string name="plan">日程</string>
+    <string name="tools">应用</string>
+    <string name="communication">通讯</string>
+    <string name="personal">我的</string>
+
+    <string name="personal_center">个人中心</string>
+    <string name="communication_file">通讯录</string>
+    <string name="plan_management">日程管理</string>
+
+    <string name="tools_iso">ISO体系</string>
+    <string name="tools_project_manager">项目管理</string>
+    <string name="tools_merchants_manager">客商管理</string>
+    <string name="tools_human_manager">人力资源</string>
+    <string name="tools_financial_manager">财务管理</string>
+    <string name="tools_archives_manager">档案管理</string>
+    <string name="tools_office_manager">办公综合</string>
+    <string name="tools_equipment_manager">设备管理</string>
+    <string name="tools_meeting_manager">会议管理</string>
+    <string name="tools_business_manager">经营体管理</string>
+    <string name="tools_system_manager">系统管理</string>
+    <string name="tools_receivable_manager">应收账款</string>
+    <string name="tools_cope_manager">应付账款</string>
+    <string name="tools_service_manager">服务管理</string>
+    <string name="tools_add_manager">添加</string>
+    <string name="tools_add_dialog">应用添加管理</string>
+
+    <string name="cancle">取消</string>
+    <string name="commit">确认</string>
+
+    <string name="delet">是否删除？</string>
+    <string name="finish">再按一次退出程序</string>
+    <string name="finish_blue_tooth">再按一次退出打印</string>
+
+    <string name="back_office">内勤</string>
+    <string name="field">外勤</string>
+    <string name="fill_card">补卡</string>
+
+    <string name="personal_announcement">个人公告</string>
+    <string name="personal_equipment">个人设备</string>
+    <string name="personal_meeting">个人会议</string>
+    <string name="personal_apply">个人申请</string>
+    <string name="personal_schedule">个人日程</string>
+    <string name="personal_mail">个人邮件</string>
+    <string name="personal_official">个人公文</string>
+    <string name="personal_about">其他</string>
+
+    <string name="personal_content">个人信息</string>
+    <string name="personal_photo">头像</string>
+    <string name="personal_phoneNumber">电话</string>
+    <string name="personal_phoneNumberSetting">联系方式更新</string>
+    <string name="personal_modify_password">修改密码</string>
+
+
+    <string name="setting">设置</string>
+    <string name="personal_version">版本检测</string>
+    <string name="personal_cache">内存清理</string>
+    <string name="personal_push">推送设置</string>
+    <string name="personal_push_setting">推送时间管理</string>
+    <string name="cancellation">注销</string>
+
+    <string name="confirm_signin">确认所选日期</string>
+    <string name="check_signin">点击签到</string>
+    <string name="statistical">统计</string>
+    <string name="rules">用户规则说明</string>
+    <string name="signin">签到</string>
+    <string name="or_signin">重签</string>
+    <string name="attendance_statistic">考勤统计</string>
+    <string name="normal_attendance">正常出勤</string>
+    <string name="should_be_attendance">应出勤</string>
+
+    <string name="late">迟到</string>
+    <string name="leave_early">早退</string>
+    <string name="did_not_signin">未签到</string>
+    <string name="ask_for_leave">请假</string>
+
+    <string name="rules_name">考勤规则名称</string>
+    <string name="attendance_time">考勤时间</string>
+    <string name="attendance_location">考勤位置</string>
+    <string name="rules_more">其他规则</string>
+
+    <string name="field_signin">外勤签到</string>
+    <string name="field_recordn">我的外勤记录</string>
+
+    <string name="customer">客户</string>
+    <string name="contact">联系人</string>
+    <string name="search">搜索</string>
+    <string name="add_customer_archives">新建客户档案</string>
+    <string name="submit">提交</string>
+
+    <string name="customer_index">客户编号 : </string>
+    <string name="customer_type">客户类别 : </string>
+    <string name="customer_name">客户名称 : </string>
+    <string name="customer_abbreviations">客户简称 : </string>
+    <string name="name_number">名称输入码 : </string>
+    <string name="up_office">上级单位 : </string>
+    <string name="registered_capital">注册资本 : </string>
+    <string name="scope_of_business">经营范围 : </string>
+    <string name="legal_person">法人 : </string>
+    <string name="person_in_charge">负责人姓名 : </string>
+    <string name="position">职务 : </string>
+    <string name="contact_phone">联系手机 : </string>
+    <string name="company_email">公司E-mail : </string>
+    <string name="company_phone">公司电话 : </string>
+    <string name="company_address">公司地址 : </string>
+    <string name="address_web_site">公司网址 : </string>
+    <string name="management_department">管理部门 : </string>
+    <string name="administrator">管理员 : </string>
+
+    <string name="personal_type">个人</string>
+    <string name="unit_type">单位</string>
+    <string name="government_type">政府部门</string>
+    <string name="homeland_type">政府部门 - 国土</string>
+    <string name="planning_type">政府部门 - 规划</string>
+    <string name="conservancy_type">政府部门 - 水利</string>
+    <string name="traffic_type">政府部门 - 交通</string>
+    <string name="company_type">政府部门 - 公司</string>
+    <string name="select_customer_type">选择客户类别</string>
+    <string name="superInput">上级单位输入</string>
+    <string name="hierarchy_list">部门层级列表</string>
+    <string name="management_list">管理层级列表</string>
+
+    <string name="field_records">外勤记录</string>
+
+    <string name="trajectory_fence">轨迹围栏</string>
+    <string name="draw_line">绘制  </string>
+    <string name="navigation">导航</string>
+    <string name="route_plannin">路线规划</string>
+    <string name="route">路线</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">加载更多</string>
+    <string name="release_to_load">释放加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="network_unavailable">无可用网络</string>
+    <string name="according">搜索</string>
+    <string name="hidden">隐藏</string>
+    <string name="area_name">区域名称</string>
+    <string name="in_the_connection">连接中 ...</string>
+    <string name="open_tooth">是否打开蓝牙</string>
+    <string name="open_ing">打开中 ...</string>
+
+    <string name="new_task">新建任务</string>
+    <string name="online_task">在线任务</string>
+    <string name="checking_navigation">巡检导航</string>
+    <string name="exit">退出</string>
+    <string name="tasks">任务列表</string>
+    <string name="the_goods">收货</string>
+    <string name="the_goods_list">签收列表</string>
+    <string name="the_goods_content">签收详情</string>
+    <string name="area">区域范围</string>
+
+    <string name="county_level">行政区县级</string>
+    <string name="sample_point_number">采样点编号</string>
+    <string name="task_status">任务状态</string>
+    <string name="add">新建</string>
+    <string name="execution">执行中</string>
+    <string name="over">已完成</string>
+    <string name="the_change_request">变更请求</string>
+    <string name="task_content">任务详情</string>
+
+    <string name="sample_point_number_t">采样点编号 :</string>
+    <string name="sample_address">采样点地址</string>
+    <string name="the_name_of_the_point">点位名称 :</string>
+    <string name="point_type">点位类型 :</string>
+    <string name="setting_the_reason">布设原因 :</string>
+    <string name="quality_control_point">是否是质控点 :</string>
+    <string name="scene_sampling">现场采样</string>
+    <string name="resampling">重新采样</string>
+    <string name="sampling_details">采样详情</string>
+    <string name="address_details">地址详情</string>
+    <string name="administrative_division_code">行政区划代码 :</string>
+    <string name="provincial">省级 :</string>
+    <string name="any">地级 :</string>
+    <string name="county">区县 :</string>
+    <string name="villages_and_towns">乡镇 :</string>
+    <string name="village">村级 :</string>
+    <string name="distance">距离 :</string>
+    <string name="address">地址 :</string>
+    <string name="position_description">方位描述 :</string>
+    <string name="lats_details">经纬度详情</string>
+    <string name="longitude">经度 :</string>
+    <string name="latitude">纬度 :</string>
+    <string name="longitude_">经度</string>
+    <string name="latitude_">纬度</string>
+    <string name="altitude">海拔(m) :</string>
+    <string name="land_information">土地信息</string>
+    <string name="land_use_type">土地利用类型 :</string>
+    <string name="soil_type">土壤类型 :</string>
+    <string name="soil_and_the_class">土壤亚类 :</string>
+    <string name="monitoring_details">监测详情</string>
+    <string name="monitoring_project_classification">监测项目分类 :</string>
+    <string name="end_task">结束任务</string>
+    <string name="task_online">任务进行中</string>
+    <string name="task_or_online">任务未开始</string>
+    <string name="begin_navigation">开始导航</string>
+
+    <string name="stop_task">关闭任务</string>
+    <string name="start_task">开始任务</string>
+
+    <string name="laboratory">实验室 :</string>
+    <string name="consignee">收货人 :</string>
+    <string name="time">时间 :</string>
+    <string name="submission_list">样品送检单列表</string>
+    <string name="delivery_number">样品送检单号</string>
+    <string name="delivery_number_to">样品送检单号 :</string>
+    <string name="consignor">发货人</string>
+    <string name="sample_list">样品列表</string>
+    <string name="index">序号</string>
+    <string name="sample_number">样品编号</string>
+    <string name="start_consignee">开始收货</string>
+    <string name="qr_code">二维码扫描</string>
+    <string name="sample_details">样品详情</string>
+    <string name="sample_number_">样品编号 :</string>
+    <string name="time_sampling">采样时间 :</string>
+    <string name="office_sampling">采样单位 :</string>
+    <string name="sample_basic_information">采样点基本信息</string>
+    <string name="division_code">行政区划代码 :</string>
+    <string name="detailed_survey_unit">详查单元 :</string>
+    <string name="point_number">点位编号 :</string>
+    <string name="the_sample_type">样品类型 :</string>
+    <string name="shelf_life_inspection">保存期检查</string>
+    <string name="sample_monitoring">土壤样品监测元素列表 ( 监测元素 ) :</string>
+    <string name="element_names">元素名</string>
+    <string name="shelf_life">保存期 ( 天 )</string>
+    <string name="qualified">合格</string>
+    <string name="no_qualified">不合格</string>
+    <string name="requirements">样品重量是否符合要求</string>
+    <string name="container_material">保存容器材质 : </string>
+    <string name="good_condition">样品瓶/袋是否完好</string>
+    <string name="tag_good_condition">标签是否完好整洁</string>
+    <string name="save_the_way">保存方式( 常温/低温/避光 )是否合格</string>
+    <string name="refuse_to_accept">拒收</string>
+    <string name="change_the_reason">变更原因</string>
+    <string name="note">备注 :</string>
+    <string name="laboratory_confirm">实验室样品确认</string>
+
+    <string name="monitoring_center_reception">监测中心收货</string>
+    <string name="receiving_batch_unit">收货批次号 :</string>
+    <string name="delivery_unit">送货单位 :</string>
+    <string name="deliveryman">送货人 :</string>
+    <string name="monitoring_center_list_reception">监测中心收货列表</string>
+    <string name="monitoring_center_list_reception_">监测收货</string>
+
+    <string name="sampling_member">采样员 :</string>
+    <string name="code_printing">二维码打印</string>
+    <string name="current_lat">当前经纬度信息</string>
+    <string name="sampling_depth">采样深度 (cm) :</string>
+    <string name="locator_number">定位仪编号 :</string>
+    <string name="locator_model">定位仪型号 :</string>
+    <string name="locator_number_">定位仪编号</string>
+    <string name="locator_model_">定位仪型号</string>
+    <string name="sample_weight">样品重量(g) :</string>
+    <string name="about_type">相关类型</string>
+    <string name="land_use">土地利用</string>
+    <string name="crop_types">作物类型</string>
+    <string name="irrigation_water_type">灌溉水类型</string>
+    <string name="topography">地形地貌</string>
+    <string name="sampling_equipment">采样器具</string>
+    <string name="organic_sample">有机样品容器</string>
+    <string name="inorganic_sample">无机样品容器</string>
+    <string name="soil_color">土壤颜色</string>
+    <string name="soil_texture">土壤质地</string>
+    <string name="soil_moisture">土壤湿度</string>
+    <string name="weather">天气</string>
+    <string name="before_sampling">采样前</string>
+    <string name="in_the_sampling">采样中</string>
+    <string name="after_sampling">采样后</string>
+    <string name="the_northwest">西北</string>
+    <string name="true_north">正北</string>
+    <string name="the_northeast">东北</string>
+    <string name="illicit_affair">正西</string>
+    <string name="east">正东</string>
+    <string name="affair_south">西南</string>
+    <string name="south">正南</string>
+    <string name="the_southeast">东南</string>
+    <string name="content_of_the_input"> 内容输入</string>
+
+    <string name="according_printer">搜索配对打印机</string>
+    <string name="unpaired_equipment">未配对设备 :</string>
+    <string name="matched_printer">已配对打印机 :</string>
+    <string name="end_the_use_of_printers">结束使用打印机</string>
+
+    <string name="locator_setting">定位仪设置</string>
+    <string name="inspection">临时巡检</string>
+    <string name="mission_statement">任务说明 :</string>
+    <string name="mission_statement_">任务说明</string>
+    <string name="begin_inspection">开始巡检</string>
+
+    <string name="peripheral_location">周边位置</string>
+
+    <string name="sampling_member_">采样员</string>
+    <string name="monitoring_center_member">监测中心样品管理员</string>
+    <string name="laboratory_consignee">实验室收货员</string>
+
+
+    <string name="zxing_msg_camera_bug">抱歉,Android相机出现问题,您可能需要重启设备!</string>
+    <string name="zxing_msg_default">请将条码置于取景框内扫描</string>
+
+
+</resources>
