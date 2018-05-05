@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_tools_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_layout"
+            android:layout_marginTop="10dp"
+            android:overScrollMode="never">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/sampling_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_layout_pidding_max"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/sampling_member"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+                <TextView
+                    android:id="@+id/time_sampling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_layout_pidding_max"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/time_sampling"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+
+                <TextView
+                    android:id="@+id/land_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_layout_pidding_max"
+                    android:layout_below="@+id/sampling_member"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/current_lat"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+                <TextView
+                    android:id="@+id/longitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_layout_pidding_max"
+                    android:layout_below="@+id/land_information"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/longitude"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+                <TextView
+                    android:id="@+id/latitude"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/text_layout_pidding_max"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/land_information"
+                    android:gravity="center_vertical"
+                    android:text="@string/latitude"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+
+                <TextView
+                    android:id="@+id/sample_point_number_t"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_layout_pidding_max"
+                    android:layout_below="@+id/longitude"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/sample_point_number_t"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+
+                <TextView
+                    android:id="@+id/altitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_layout_pidding_max"
+                    android:layout_below="@+id/sample_point_number_t"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/altitude"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+                <TextView
+                    android:id="@+id/sampling_depth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_layout_pidding_max"
+                    android:layout_below="@+id/altitude"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/sampling_depth"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+                <TextView
+                    android:id="@+id/locator_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_layout_pidding_max"
+                    android:layout_below="@+id/sampling_depth"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/locator_number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+                <TextView
+                    android:id="@+id/locator_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_layout_pidding_max"
+                    android:layout_below="@+id/locator_number"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/locator_model"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+                <TextView
+                    android:id="@+id/sample_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_layout_pidding_max"
+                    android:layout_below="@+id/locator_model"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/sample_weight"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+                <include layout="@layout/layout_select_type" />
+
+                <EditText
+                    android:id="@+id/note_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/layout_select_type"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/transparent"
+                    android:gravity="left"
+                    android:hint="@string/note"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textCursorDrawable="@drawable/corners_edittext_cursor"
+                    android:textSize="14dp" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_below="@+id/note_edit"
+                    android:background="@color/grey" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/line"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/submit"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/login_button_bac"
+                        android:gravity="center"
+                        android:text="@string/submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_content_size" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="36dp"
+            android:background="@drawable/text_bac_radail_round"
+            android:gravity="center"
+            android:text="添加"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title_size" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_tools_layout" />
+
+    <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginBottom="91dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/distance"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/sample_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/distance"
+                android:background="@color/grey1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/sample_address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/sample_point_number"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/sample_address"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/sample_point_number_t"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <RelativeLayout
+                android:id="@+id/quality_control_point_layout"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/sample_address"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/quality_control_point"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/text_layout_pidding_max"
+                    android:button="@drawable/check_tools"
+                    android:text="  质控点"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/point_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/sample_point_number"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/point_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/the_name_of_the_point"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/point_type"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/the_name_of_the_point"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/setting_the_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/the_name_of_the_point"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/setting_the_reason"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+
+            <TextView
+                android:id="@+id/address_details"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/setting_the_reason"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/address_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+
+            <TextView
+                android:id="@+id/administrative_division_code"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/address_details"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/administrative_division_code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/provincial"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/address_details"
+                android:gravity="center_vertical"
+                android:text="@string/provincial"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+
+            <TextView
+                android:id="@+id/any"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/administrative_division_code"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/any"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/county"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/provincial"
+                android:gravity="center_vertical"
+                android:text="@string/county"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/villages_and_towns"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/any"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/villages_and_towns"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/village"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/county"
+                android:gravity="center_vertical"
+                android:text="@string/village"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/villages_and_towns"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/position_description"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/address"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/position_description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/lats_details"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/position_description"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/lats_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+
+            <TextView
+                android:id="@+id/longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/lats_details"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/longitude"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/latitude"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/lats_details"
+                android:gravity="center_vertical"
+                android:text="@string/latitude"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/altitude"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/longitude"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/altitude"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+
+            <TextView
+                android:id="@+id/land_information"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/altitude"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/land_information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+
+            <TextView
+                android:id="@+id/land_use_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/land_information"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/land_use_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/soil_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/land_use_type"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/soil_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/soil_and_the_class"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/soil_type"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/soil_and_the_class"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/monitoring_details"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/soil_and_the_class"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/monitoring_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/monitoring_project_classification"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_height"
+                android:layout_below="@+id/monitoring_details"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/monitoring_project_classification"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/grey" />
+
+        <FrameLayout
+            android:id="@+id/fl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/start_task_status"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/login_button_bac"
+                    android:gravity="center"
+                    android:text="@string/start_task"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_content_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/begin_navigation"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/login_button_bac"
+                    android:gravity="center"
+                    android:text="@string/begin_navigation"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_content_size" />
+
+                <TextView
+                    android:id="@+id/scene_sampling"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/login_button_bac"
+                    android:gravity="center"
+                    android:text="@string/scene_sampling"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_content_size" />
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/task_status_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_min"
+            android:layout_below="@+id/fl_layout"
+            android:background="@color/grey1"
+            android:gravity="center"
+            android:text="@string/task_online"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_content_size" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_height">50dp</dimen>
+    <dimen name="text_title_size">18dp</dimen>
+    <dimen name="text_style_size">16dp</dimen>
+    <dimen name="text_content_size">14dp</dimen>
+    <dimen name="text_min_size">12dp</dimen>
+
+
+    <dimen name="magin_life">20dp</dimen>
+    <dimen name="magin_right">20dp</dimen>
+    <dimen name="magin_top">20dp</dimen>
+    <dimen name="magin_bottom">20dp</dimen>
+
+    <dimen name="magin_life_min">10dp</dimen>
+    <dimen name="magin_right_min">10dp</dimen>
+    <dimen name="magin_top_min">10dp</dimen>
+    <dimen name="magin_bottom_min">10dp</dimen>
+
+    <dimen name="layout_height_min">40dp</dimen>
+
+    <dimen name="text_layout_pidding">36dp</dimen>
+    <dimen name="text_layout_pidding_max">40dp</dimen>
+
+    <dimen name="sampling_photo">90dp</dimen>
+
+
+
+</resources>

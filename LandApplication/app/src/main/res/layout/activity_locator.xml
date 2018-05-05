@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey1"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_tools_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/locator_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_layout_pidding_max"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:gravity="center_vertical"
+            android:text="@string/locator_number"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:background="@color/grey2" />
+
+
+        <TextView
+            android:id="@+id/locator_model"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_layout_pidding_max"
+            android:layout_marginLeft="@dimen/magin_life_min"
+            android:gravity="center_vertical"
+            android:text="@string/locator_model"
+            android:textColor="@color/login_show_bg_black"
+            android:textSize="@dimen/text_content_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/grey2" />
+
+    </LinearLayout>
+
+</LinearLayout>

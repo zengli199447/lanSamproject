@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#EEEEEE</color>
+
+    <color name="btn_rect_alpha">#56b3b3b3</color>
+    <color name="main_bottom_dark_blue">#061523</color>
+    <color name="main_bottom_dark_gray">#969696</color>
+    <color name="main_bottom_gold">#fda606</color>
+    <color name="main_bottom_blue">#4d7bfe</color>
+
+    <!--<color name="black">#000000</color>-->
+    <color name="black">#7f1e1914</color>
+    <color name="transparent">#00000000</color>
+    <drawable name="transparent">#00000000</drawable>
+    <color name="white">#ffffff</color><!--白色 -->
+    <color name="light_grey">#f9f9f9</color><!--浅灰色 -->
+
+    <color name="gold">#ffd700</color><!--金色 -->
+    <color name="orangered">#ff4500</color><!--红橙色 -->
+    <color name="grey">#bfbfbf</color><!--灰色 -->
+    <color name="grey1">#eeeeee</color><!--灰色 -->
+    <color name="grey2">#dcdcdc</color><!--灰色 -->
+    <color name="gray">#808080</color><!--灰色 -->
+    <color name="gray_min">#fafafa</color><!--灰色 -->
+
+    //------------------------------------
+    <color name="splash_bg_blue">#1448a8</color><!--闪屏页背景色 -->
+    <color name="login_input_bg_black">#7f443f3b</color><!--登录页输入框背景色 -->
+    <color name="login_show_bg_black">#7f1e1914</color><!--登录页显示框背景色 -->
+    <color name="login_text_show">#646464</color><!--登录页显示字 -->
+    <color name="login_text_input">#676767</color><!--登录页输入字 -->
+    <color name="login_text_borde">#423831</color><!--登录页边框 -->
+    <color name="login_btn_bg">#1449a8</color><!--登录页登录按钮背景色 -->
+    <color name="login_text_bg">#6d91d3</color><!--登录页登录字体景色 -->
+    <color name="contact_bg">#f5f5f5</color><!--通讯录背景色 -->
+    <color name="text_black">#444444</color><!--黑色字体颜色 -->
+    <color name="item_gray_thread">#f2f2f2</color>
+    <color name="green">#cc13990f</color>
+
+    <color name="green_style">#00B589</color>
+
+    <color name="green_min">#65d5cd</color>
+
+    <color name="green_min_t">#4d65d5cd</color>
+
+    <color name="red_style">#fa0040</color>
+
+</resources>

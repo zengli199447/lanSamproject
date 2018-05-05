@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/delivery_number"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/delivery_number_to"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/delivery_number"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/time"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey1" />
+
+
+            <TextView
+                android:id="@+id/sample_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/line"
+                android:background="@color/grey1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/sample_list"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_content_size" />
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_layout_pidding_max"
+                android:layout_below="@+id/sample_list"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/index"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/sample_number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_content_size" />
+
+            </LinearLayout>
+
+            <com.example.administrator.landapplication.ui.view.AutoListView
+                android:id="@+id/charge_content_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout"
+                android:layout_marginBottom="50dp"
+                android:background="@color/white"
+                android:divider="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:listSelector="@color/transparent"
+                android:overScrollMode="never" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/start_consignee"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/login_button_bac"
+            android:gravity="center"
+            android:text="@string/start_consignee"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_content_size" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
