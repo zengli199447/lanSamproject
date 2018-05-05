@@ -38,7 +38,6 @@ public class WelComeActivity extends BaseActivity implements View.OnClickListene
     protected void registerEvent(CommonEvent commonevent) {
         switch (commonevent.getCode()){
             case 0:
-            case 1:
                 break;
         }
     }
